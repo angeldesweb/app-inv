@@ -11,10 +11,10 @@ autoUpdater.on('update-available',() => dialog.showMessageBox({message:'Actualiz
 autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
   const dialogOpts = {
     type: 'info',
-    buttons: ['Restart', 'Later'],
-    title: 'Application Update',
+    buttons: ['Reiniciar', 'Luego'],
+    title: 'Actualización lista',
     message: process.platform === 'win32' ? releaseNotes : releaseName,
-    detail: 'A new version has been downloaded. Restart the application to apply the updates.'
+    detail: 'Nueva versión descargada. Reinicia la aplicación para aplicar los cambios.'
   }
 
   dialog.showMessageBox(dialogOpts).then((returnValue) => {
