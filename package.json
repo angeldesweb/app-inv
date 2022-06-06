@@ -1,7 +1,7 @@
 {
   "name": "app-inv",
   "productName": "Inventario",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Sistema de inventario",
   "main": "src/index.js",
   "scripts": {
